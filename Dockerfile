@@ -1,4 +1,4 @@
-FROM golang AS build-env
+FROM harbor.gcpslab.xyz/library/golang AS build-env
 ADD . /src
 RUN cd /src && make
 
